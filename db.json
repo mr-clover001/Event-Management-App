@@ -1,0 +1,19 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "name": "Anoop Sharma",
+      "email": "ak23@gmil.com",
+      "phone": "6261028230"
+    },
+    {
+      "id": 2,
+      "name": "Sumit Sharma",
+      "email": "sks23@gmil.com",
+      "phone": "9281028230"
+    },
+    {
+      "id": 3
+    }
+  ]
+}
