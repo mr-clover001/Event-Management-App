@@ -22,7 +22,7 @@ function EventList() {
                 </div>
 
                 <div className="event-handler">
-                    <div className='create-event-form'>
+                    <div className='create-event-form-comp'>
                         <CreateEvent onEventCreated={handleEventCreated} />
                     </div>
 

@@ -49,9 +49,9 @@
 }
 
 .container-head h1 {
-    font-size: 2.5rem;
-    color: #276ccd;
-    font-family: 'Dancing Script', cursive;
+    font-size: 2.2rem;
+    color: #26313fc7;
+    font-family: 'ubuntu', cursive;
 }
 
 .event-card-container {
@@ -89,8 +89,8 @@
 
 /* -------------------------------- */
 .container {
-    padding: 20px;
-    margin: 10px auto;
+    padding: 0px 10px;
+    margin: 0 auto;
 }
 
 .event-handler {
@@ -100,8 +100,28 @@
 }
 
 .create-event-container {
-    border: 1px solid black;
-    padding: 20px 70px;
+    padding: 0px 35px;
+
+}
+
+.create-event-container h2 {
+    color: #26313fc7;
+    font-family: 'ubuntu', cursive;
+}
+
+.create-event-form {
+    background-color: #fff;
+    width: 89%;
+    padding: 5px 15px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.226);
+}
+
+.create-event-form-comp {
+    background-color: #0e0e0f14;
+    width: 82%;
+    padding: 20px 2px;
+    align-items: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.356);
 }
 
 .event-form-card {
@@ -110,9 +130,16 @@
 
 
 
+.event-title {
+    background-color: #0e0e0f06;
+    border: none;
+    font-size: 1.3em;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
 .event-card {
     border: 1px solid #ddd;
-    /* Add a softer border */
     border-radius: 20px;
     padding: 5px 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -121,27 +148,82 @@
     height: 500px;
 }
 
+.event-info {
+    padding: 30px 35px;
+}
+
+
+
+.time {
+    border-color: rgba(0, 0, 0, 0.233);
+    color: #ccc;
+}
+
+.end-time {
+    padding: 0px 3px;
+}
 
 .event-card:hover {
     transform: scale(1.26);
 }
 
-img {
+
+.event-poster {
+    padding: 35px 15px;
+}
+
+.block-0 {
+    width: 250px;
+    height: 250px;
+    background-color: #2159a8e7;
     border-radius: 15px;
-    width: 488px;
-    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+}
+
+.img-text {
+    font-weight: 500;
+    color: white;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.block-0 img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-selector {
+    font-size: 18px;
+    padding: 5px 5px;
+    color: rgba(0, 0, 0, 0.322);
 }
 
 
 
+
+
+
 /* Buttons------------ */
+
 .submit {
 
     background-color: #215aa8;
     color: #f3f1f1;
     border-radius: 10px;
     padding: 6px 13px;
-    font-size: 1.4em;
+    font-size: 1.1em;
     border: none;
 }
 
@@ -156,7 +238,7 @@ img {
 .back-link {
     margin-left: 12px;
     padding: 6px 13px;
-    font-size: 1.4em;
+    font-size: 1.1em;
     border-radius: 10px;
     border: 3px solid #215aa8;
     background-color: transparent;
