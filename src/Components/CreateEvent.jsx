@@ -81,7 +81,7 @@ function CreateEvent({ onEventCreated }) {
                         </div>
 
                         <div className="form-group">
-                            <label htmlFor="location"></label>
+                            <label htmlFor="location"><i class="fa-solid fa-location-dot"></i></label>
                             <input
                                 type="text"
                                 name="location"

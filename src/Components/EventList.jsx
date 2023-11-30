@@ -26,21 +26,53 @@ function EventList() {
                         <CreateEvent onEventCreated={handleEventCreated} />
                     </div>
 
-                    <div className="event-card-container row">
-                        {data.map((d) => (
-                            <div key={d.id} className="event-card">
 
-                                <div className="img">
-                                    <img src={d.image.name} alt={`Event ${d.id}`} />
-                                </div>
+
+                    <div className="event-card-container">
+                        {data && data.map((d) => (
+
+
+                            <div className="event-card-container">
                                 <div className="event-card-body">
-                                    <h2>ID: {d.id}</h2>
-                                    <h2>Title: {d.title}</h2>
-                                    <h2>Description: {d.description}</h2>
-                                    <h2>img: {d.image.name}</h2>
-                                </div>
+                                    <div className="Event-details col">
+                                        <div className="details row">
+                                            <div className="col">Title:</div>
+                                            <div className="col">
+                                                <p>{d.title}</p>
+                                            </div>
+                                        </div>
+                                        <div className="details row">
+                                            <div className="col">Start Date:</div>
+                                            <div className="col">
+                                                <p>{d.startDate}</p>
+                                            </div>
+                                        </div>
+                                        <div className="details row">
+                                            <div className="col">End Date:</div>
+                                            <div className="col">
+                                                <p>{d.endDate}</p>
+                                            </div>
+                                        </div>
+                                        <div className="details row">
+                                            <div className="col">Duration:</div>
+                                            <div className="col">
+                                                <p>{d.duration} Days</p>
+                                            </div>
+                                        </div>
+                                        <div className="details row">
+                                            <div className="col">Location</div>
+                                            <div className="col">
+                                                <p>{d.location}</p>
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                    <div className="event-poster col">
+                                        <img src={d.image.name} alt={d.title} />
+                                    </div>
+                                </div>
                             </div>
+
                         ))}
                     </div>
                 </div>
